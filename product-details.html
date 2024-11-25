@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shop the latest fashion trends, including collections for Women, Men, Accessories, and more. Discover our signature collection today!" />
+    <meta name="keywords" content="fashion, shopping, women, men, accessories, online store, fashion collection" />
+    <meta name="author" content="Company Name" />
+    <meta property="og:title" content="Venia - Latest Fashion Collection" />
+    <meta property="og:description" content="Shop the latest fashion trends in Women's and Men's fashion, Accessories, and more!" />
+    <meta property="og:image" content="images/venia-logo.svg" />
+    <meta property="og:url" content="https://www.venia.com" />
+    <title>Venia - Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/home.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link rel="stylesheet" href="css/details.css"/>
+</head>
+  <body>
+    <header>
+      <div class="header-container">
+          <div class="hamburger-container">
+              <div class="hamburger-menu" aria-label="Menu">
+                  <i class="fas fa-bars"></i>
+              </div>
+              <nav class="mobile-nav-box" role="navigation" aria-label="Mobile Menu">
+                  <div class="mobile-nav-title">
+                      <span>Shobop Categories</span>
+                      <div class="mobile-close-icon" aria-label="Close Menu">✕</div>
+                  </div>
+                  <ul class="mobile-nav-links" role="menu">
+                      <li><a href="#" role="menuitem">Women</a></li>
+                      <li><a href="#" role="menuitem">Men</a></li>
+                      <li><a href="#" role="menuitem">Smart Gear</a></li>
+                      <li><a href="#" role="menuitem">Accessories</a></li>
+                  </ul>
+                  <div class="account-block">
+                      <div>
+                          <img src="images/user.svg" alt="Sign In Icon" class="account-icon" />
+                          <span class="account-text">Account</span>
+                      </div>
+                      <a href="#" class="sign-in-link">Sign In</a>
+                  </div>
+              </nav>
+          </div>
+          <div class="logo">
+              <a href="#main-content">
+                  <img src="images/venia-logo.svg" alt="Venia Logo" class="logo-img" />
+              </a>
+          </div>
+          <nav class="desktop-nav" role="navigation">
+              <ul class="nav-links" role="menubar">
+                  <li><a href="#" role="menuitem">Women</a></li>
+                  <li><a href="#" role="menuitem">Men</a></li>
+                  <li><a href="#" role="menuitem">Smart Gear</a></li>
+                  <li><a href="#" role="menuitem">Accessories</a></li>
+              </ul>
+          </nav>
+          <div class="header-icons" role="group" aria-label="Header Icons">
+              <div class="icon">
+                  <img src="images/search.svg" alt="Search Icon" class="icon-img" />
+                  <span class="icon-text">Search</span>
+              </div>
+              <div class="icon" id="sign-in-icon-container">
+                  <img src="images/user.svg" alt="Sign In Icon" class="icon-img" />
+                  <span class="icon-text">Sign In</span>
+              </div>
+              <div class="cart-icon" onclick="toggleCart()">
+                  <img src="images/shopping-bag.svg" alt="Shopping Cart Icon" class="icon-img" />
+                  <span id="cart-count">0</span>
+              </div>
+          </div>
+      </div>
+  </header>
+  </div>
+    <div id="cart-modal" class="cart-modal">
+      <div class="cart-content">
+        <span class="close-btn" onclick="toggleCart()">&times;</span>
+        <h2>Shopping Cart</h2>
+        <div id="cart-container"></div>
+      </div>
+    </div>
+<main>
+  <section class="breadcrumbs">
+    <p>Clothing / Women’s / Outerwear</p>
+  </section>
+  <section id="product-details" class="product-details">
+    <!-- Product details will be injected here by JavaScript -->
+  </section>
+</main>
+  <!-- Include Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- Footer Section -->
+  <footer role="contentinfo">
+    <div class="footer-container">
+      <!-- Footer Columns -->
+      <div class="footer-column">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Order Status</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Order Status</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us!</h4>
+        <p>Stay connected with us for the latest updates and trends.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <img src="images/venia-logo.svg" alt="Venia Logo" class="footer-logo-img" />
+      </div>
+      <p>© Company Name Address Ave, City Name, State ZIP</p>
+      <div class="footer-links">
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+<script src="category.js"></script>
+<script src="product-details.js"></script>
+</body>
+</html>
